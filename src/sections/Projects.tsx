@@ -46,14 +46,14 @@ const portfolioProjects = [
 ];
 
 export const ProjectsSection = () => {
-  return <div className="contain`er">
+  return <div className="container">
     <SectionHeader title="REAL-WORLD RESULTS" subtitle="Featured Projects" description="See how I transformed concepts into engaging digital experiences" />
     
     
     
-    <div className="mt-16 flex w-auto flex-col gap16 mx-10 items-center lg:mx-0 lg:flex-row lg:gap-8 ">
+    <div className="mt-16 flex w-auto flex-col gap-16 mx-10 items-center lg:mx-0 lg:flex-row lg:gap-8 ">
       {portfolioProjects.map((project, index) => (
-        <Card key={index} className="ppx-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20"> 
+        <Card key={index} className="lg:h-[600px] px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-10"> 
           <div className="inline-flex items-center justify-normal gap-5 ">
             <h2 className="text-xl  bg-gradient-to-r from-emerald-500 to-sky-400 text-transparent tracking-wider font-medium text-center bg-clip-text">{project.company}</h2>
             <div className="size-2 bg-emerald-400 border-sky-400 rounded-full"></div>

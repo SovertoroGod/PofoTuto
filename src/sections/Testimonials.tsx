@@ -42,11 +42,12 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return <div className="py-16 lg:py-24">
+    <div className="container">
     <SectionHeader title="Happy Clients" subtitle="What Clients Says About Me" description="Don't just take my words for it. What my client have to say about my word." />
     <div className="mt-16 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
       <div className="flex gap-8 flex-none ">
       {testimonials.map((testimonial, index) => (
-        <Card key={index} className="max-w-xs md:max-w-md md:p-8 mb-3 h-full border border-gray-300 p-4">
+        <Card key={index} className="max-w-xs md:max-w-md md:p-8 mb-3 h-[320px] border border-gray-300 p-4">
           <div className="flex gap-4 items-center ">
             <div className="size-14  bg-gray-700 inline-flex rounded-full items-center justify-center flex-shrink-0">
               <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full" />
@@ -60,6 +61,7 @@ export const TestimonialsSection = () => {
          </Card>
       ))}
       </div>
+    </div>
     </div>
   </div>;
 };
